@@ -1,0 +1,158 @@
+This notebook is in **read-only mode**, which means I cannot generate, save, or export downloadable **PDF files** or persistent artifacts directly within this session. If you would like full write access and artifact creation capabilities, you can create a **personal copy** of this notebook.
+
+However, I can compile all **20 exam prep questions** you shared across our chat session below. You can easily select, copy, and paste this text into any text editor or document processor (such as Google Docs, Word, or Markdown editor) to print or save as a PDF:
+
+---
+
+### **Compiled Practice Questions & Answers from Chat**
+
+#### **Question 1: Tool Scoping (Yes/No)**
+**Scenario:** Select whether each tool should be included in a procurement agent's toolset:
+* **A read-only catalog lookup tool that returns vendor and SKU information:** **YES** *(Essential read-only data lookup)*
+* **An inbox-send tool that emails purchase requests to vendors directly:** **NO** *(Irreversible external action requiring Human-in-the-Loop oversight)*
+* **A draft-write tool that creates purchase-request drafts in the review queue:** **YES** *(Safe Human-in-the-Loop staging pattern)*
+* **A production-database admin tool unrelated to procurement:** **NO** *(Capability bloat & least-privilege violation)*
+* **A read-only policy-document tool that returns the relevant procurement policies:** **YES** *(Essential read-only grounding tool)*
+
+---
+
+#### **Question 2: Fabricated Citation Incident Response**
+**Scenario:** A research summarization assistant generated a fabricated citation. Which two Diligence-competency actions should be taken?
+* **Correct Answers:**
+  1. **Sample recent summaries to estimate the fabrication frequency across the population** *(Move from anecdote to statistical rate)*
+  2. **Review whether citation grounding controls exist anywhere in the current generation pipeline** *(Verify structural safeguards)*
+
+---
+
+#### **Question 3: Claude Code Permission Rules Review**
+**Scenario:** A peer's draft rules grant unrestricted Bash access to all projects across developers. Which response is most appropriate?
+* **Correct Answer:** **Replace unrestricted Bash with narrowly-scoped tool patterns that allow only the specific commands the workflows require, and add explicit deny rules for sensitive operations.** *(Least privilege + explicit deny rules that apply immediately)*
+
+---
+
+#### **Question 4: Controlled Experiment (A/B Test) Design**
+**Scenario:** Which two design steps must be completed BEFORE running a controlled prompt experiment with random assignment?
+* **Correct Answers:**
+  1. **Determine the minimum detectable effect size and the sample size needed for power**
+  2. **Define the hypothesis and the primary success metric for the comparison**
+
+---
+
+#### **Question 5: Tool Router vs. Capability Decomposition**
+**Scenario:** A triage agent grew from 6 to 34 tools, reducing accuracy. Which two findings justify capability decomposition over adding a router?
+* **Correct Answers:**
+  1. **The 34 tools serve four distinct claim workflow domains within the triage scope.** *(Domain seam)*
+  2. **Tool descriptions overlap across multiple claim categories within the agent's tool set.** *(Root mechanism of selection errors)*
+
+---
+
+#### **Question 6: AI-Generated PR Review Policy**
+**Scenario:** A team lead proposes bypassing code review for AI-generated PRs under 50 lines. Which two Diligence objections should you raise?
+* **Correct Answers:**
+  1. **Removing review removes the verification mechanism that AI-generated output requires across the workflow.**
+  2. **Line count is a poor proxy for the actual risk a code change introduces into the system.**
+
+---
+
+#### **Question 7: Execution Layer Boundary Mapping**
+**Scenario:** Map each decomposed component to its correct execution layer:
+* **Optical character recognition (OCR) on scanned invoice images:** **Pre-Processing**
+* **PII redaction on extracted text prior to model invocation:** **Pre-Processing**
+* **Claude-based classification of invoice type:** **Model Stage**
+* **Claude-based extraction of structured invoice fields:** **Model Stage**
+* **Schema validation of the extracted fields:** **Post-Processing**
+* **Persistence of validated records to the system of record:** **Post-Processing**
+
+---
+
+#### **Question 8: Transparency & Disclosure**
+**Scenario:** Which transparency practice most directly supports responsible deployment for a customer-facing AI assistant?
+* **Correct Answer:** **Disclose AI involvement to end users in line with the organization's transparency policy and provide a documented path to reach a human when needed.**
+
+---
+
+#### **Question 9: Architectural Communication Packages**
+**Scenario:** Match Package 1 (Threat model, residual-risk register, control-mapping table) and Package 2 (Capabilities delivered, feature roadmap dependencies) to their target audiences:
+* **Correct Answers:**
+  1. **Package 1: Security and compliance reviewer**
+  2. **Package 2: Product manager owning the roadmap**
+
+---
+
+#### **Question 10: Reviewing an Incomplete ADR**
+**Scenario:** A peer's draft ADR states the decision and technical detail but omits alternatives considered and trade-offs accepted. What is the correct response?
+* **Correct Answer:** **Ask the author to add the alternatives considered and the trade-offs accepted before publishing the ADR.** *(ADRs preserve reasoning under audit)*
+
+---
+
+#### **Question 11: Dominant Cost Driver Optimization**
+**Scenario:** Token cost is dominated by a long, repeated system prompt and large retrieved context per request. Which optimization directly targets both?
+* **Correct Answer:** **Move the long, repeated system prompt into a cacheable prefix and trim retrieved context to the spans relevant to each query.** *(Prompt Caching + Context Minimization)*
+
+---
+
+#### **Question 12: AI Ethics Review Checklist**
+**Scenario:** Which two checks belong on an AI ethics review checklist?
+* **Correct Answers:**
+  1. **Confirm that high-impact decisions retain human accountability rather than being attributed to the model.**
+  2. **Verify that outputs do not rely on generalizations about people that the underlying data does not support.**
+
+---
+
+#### **Question 13: Hiring Tool Evaluation Set Coverage**
+**Scenario:** An evaluation set for a hiring tool is drawn from one geographic region and one tenure band. What is the correct move?
+* **Correct Answer:** **Expand the evaluation set to cover the geographic regions and tenure bands the tool will serve, and rescore the system on the expanded set before broader release.**
+
+---
+
+#### **Question 14: Presentation Strategy for Mixed Audiences**
+**Scenario:** Which presentation strategy best serves a mixed audience of an executive sponsor and engineering leads?
+* **Correct Answer:** **Lead with the decision, the business outcomes it serves, and the trade-offs accepted, follow with the technical rationale, alternatives, and implementation implications for the engineering audience.**
+
+---
+
+#### **Question 15: Safety Guardrails & Controls**
+**Scenario:** Which two tactics belong on a customer-facing assistant guardrail list?
+* **Correct Answers:**
+  1. **Layer prompt-level guardrails with runtime content checks rather than relying on either alone.** *(Defense in depth)*
+  2. **Validate the model output against a structured schema before downstream actions are taken.** *(Deterministic programmatic gate)*
+
+---
+
+#### **Question 16: Pilot Procurement Assistant Acceptance vs. Overrides**
+**Scenario:** Acceptance is 89%, but specialists override vendor recommendations using unconsidered criteria. Which two Discernment observations should you raise?
+* **Correct Answers:**
+  1. **Acceptance does not measure whether recommendations are right after specialist review.**
+  2. **The unconsidered criteria represent a scope gap in the assistant's input space directly.**
+
+---
+
+#### **Question 17: Customer Refund Delegation Boundary**
+**Scenario:** A team proposes delegating small customer refund decisions with no human review to preserve efficiency gains. Which principle guides your response?
+* **Correct Answer:** **Delegation should generally include human review on decisions the workflow produces, independent of how small the transaction is.** *(Stakes and reversibility route work, not dollar amount)*
+
+---
+
+#### **Question 18: Context Bloat from 60+ MCP Tools**
+**Scenario:** Claude Code sessions consistently load 60+ MCP tools from many servers, exhausting context budget. Which adjustment fixes this without removing capability?
+* **Correct Answer:** **Enable Tool Search so tool definitions are deferred and discovered on demand rather than loaded into context upfront.** *(Progressive discovery)*
+
+---
+
+#### **Question 19: Value Pillars Identification**
+**Scenario:** Match 4 stakeholder feedback statements to business value pillars:
+1. *3x purchase orders per analyst/day* → **Productivity**
+2. *Eliminated manual data entry role* → **Efficiency**
+3. *API costs 40% over budget* → **Solution Cost**
+4. *Latency averaging 11s vs 5s SLA* → **Performance SLA**
+* **Correct Answer:** **Option A**
+
+---
+
+#### **Question 20: Pattern Selection for Fixed Document Batching**
+**Scenario:** Comparing patterns for a batch document-classification job with fixed steps (extract metadata → classify → summarize → persist). Which pattern is best?
+* **Correct Answer:** **A workflow pattern, because the steps are well-defined and predictable per-request token cost is preferred over flexibility.**
+
+---
+
+💡 *Let me know if you would like to run through additional mock questions or focus on specific CCAR-P domain concepts!*
